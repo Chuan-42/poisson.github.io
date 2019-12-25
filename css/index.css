@@ -1,0 +1,256 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-image: url(../image/bg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+}
+.hudie{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	display: flex;
+	flex-flow: row nowrap;
+	bottom: 20px;
+}
+.hudie img{
+	width: 10%;
+}
+.recipient{
+	width: 1000px;
+	height: 560px;
+	margin:40px auto;
+	background-color:aliceblue;
+	border-radius: 30px;
+	box-shadow: -1px -2px 2px 2px #a198c2;
+	padding: 20px;
+}
+.coment{
+	width: 1000px;
+	height:520px;
+	/*flex-flow: row wrap;
+	display: flex;*/
+}
+.left{
+	width:820px;
+	height: 560px;
+	background: wheat;
+	float: left;
+	border-radius: 10px 0px 0px 10px ;
+}
+/*开始界面*/
+.coments{
+	width: 1000px;
+	height:560px;
+	position: fixed;
+	z-index: 99;
+	border-radius: 10px;
+	background-image: url(../image/ksbj.png);
+	background-size: 1000px 560px;
+}
+.coments .progres{
+	width: 80%;
+	height:20px ;
+	border: 2px solid blue;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 500px;
+	
+}
+.coments .progres .nr{
+	width: 1%;
+	height: 100%;
+	background:blue ;
+}
+.coments .texts{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	color: #FFC0CB;
+}
+/*菜单页面*/
+.menu{
+	width: 820px;
+	height:560px;
+	position: fixed;
+	z-index: 98;
+	background: url(../image/menu.jpg);
+	background-size: 820px 560px;
+	border-radius: 10px 0px 0px 10px;
+}
+.menu p button{
+	width: 250px;
+	height: 50px;
+	background:cadetblue;
+	outline: none;
+	border: none;
+	color: red;
+	border-radius: 0px 25px 25px 0px;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.menu p button.commencer{
+	margin-top: 300px;
+}
+.menu p button.commencer:hover{
+	animation:mymove 0.5s forwards;
+	background: #90dde0;
+	color: white;
+}
+.menu p button.presenter:hover{
+	animation:mymove 0.5s forwards;
+	background: #90dde0;
+	color: white;
+}
+.menu p button.quitter:hover{
+	animation:mymove 0.5s forwards;
+	background: #90dde0;
+	color: white;
+}
+@keyframes mymove{
+	to{
+		width: 350px;
+	}
+}
+/*左上方*/
+.left_top{
+	width: 820px;
+	height: 80px;
+	background:linear-gradient(#00d5ff,#c700ff66,#092e62);
+	border-radius: 10px 0px 0px 0px ;
+}
+.test1,.test2,.test3{
+	float: left;
+	width: 220px;
+	height: 80px;
+	font-size: 1.5rem;
+	color: white;
+	line-height: 80px;
+	text-align: center;
+}
+.logo{
+	float: left;
+	width:80px;
+	height: 80px;
+}
+.left_bottom{
+	background-image: url(../image/yxbj.jpg);
+	width: 820px;
+	height: 480px;
+	position:fixed;
+	background-size: 820px 480px;
+	border-radius: 0px 0px 0px 10px ;
+	
+}
+/*死亡时的弹出*/
+.mourir{
+	width: 500px;
+	height: 340px;
+	background:url(../image/siw.jpg);
+	background-size: 500px 340px;
+	position: absolute;
+	margin: auto;
+	z-index: 100;
+	top: 60px;
+	left: 160px;
+	border-radius: 30px;
+	font-size: 2rem;
+	display: none;
+	text-align: center;
+}
+.mourir h1{
+	font-size: 2.2rem;
+}
+.mourir button{
+	border: none;
+	background:aquamarine;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 20px;
+}
+/*转身的动画*/
+.bos{
+    transform-style: preserve-3d; 
+    animation:spin 0.2s alternate 1 forwards; 
+}
+@keyframes spin{   
+    100%{   
+        transform:rotateY(180deg)   
+    }   
+}
+.left_bottom .ontologie{
+	width: 80px;
+	height: 40px;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+/*右侧*/
+.right{
+	width: 180px;
+	height:560px;
+	background:cadetblue;
+	float: right;
+	border-radius: 0px 10px 10px 0px;
+	line-height: 25px;
+}
+.fonction{
+	padding: 10px;
+	margin-top: 20px;
+	width: 140px;
+	margin-left: 10px;
+	height: 60px;
+	border: 1px solid aqua;
+	color: red;
+}
+.fonction button{
+	margin-left: 10px;
+	width: 30px;
+	height: 30px;
+	background-size: 30px 30px;
+	border: none;
+}
+.sx{
+	background-image: url(../image/shuaxin.png);
+}
+.zy{
+	background-image: url(../image/menuc.png);
+}
+.tc{
+	background-image: url(../image/tc.png);
+}
+.right .manipuler{
+	margin-left: 10px;
+	width: 160px;
+	height: 500px;
+	color: white;
+}
+.right .manipuler .titles{
+	color: pink;
+}
+.paopao{
+	width: 820px;
+	height: 480px;
+	position: fixed;
+	z-index: 0;
+}
+.paopao img{
+	width: 100%;
+	height: 100%;
+}
+/*其他鱼*/
+.fish{
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
